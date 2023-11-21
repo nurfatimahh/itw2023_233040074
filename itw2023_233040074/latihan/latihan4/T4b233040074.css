@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  /*margin: 0;*/
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+body{
+    background-color: #aeaeae;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 500px;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+}
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.header .judul{
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header ul li{
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
+}
+.header a.hover{
+    background-color: lightskyblue;
+    color: white;
+}
+.hero{
+    height: 400px;
+    background-image: url(computer.jpg);
+    background-size: cover;
+    background-position: 0 -0px;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+.content{
+    padding: 15px;
+}
+.paragraf1 {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.content h2{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content .penulis{
+    font-size: 14px;
+    margin-top: -5px;
+}
+.content .penulis a{
+    color: salmon;
+    text-decoration: none;
+}
+.content p{
+    margin-bottom: -5px;
+    font-size: 14px;
+    font-family: sans-serif ;
+}
+.hero1 {
+    height: 250px;
+    background-image: url(branko-stancevic-GI1hwOGqGtE-unsplash.jpg);
+    background-size: cover;
+    background-position: 0 -0px;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid white;
+    border-top: 10px solid white;
+
+}
+.h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer{
+    background-color: #333333;
+    padding: 10px;
+}
+.footer .copy{
+    color: #aeaeae;
+    text-align: center;
+    font-size: 12px;
+}

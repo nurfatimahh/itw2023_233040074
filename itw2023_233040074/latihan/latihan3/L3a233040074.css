@@ -1,0 +1,15 @@
+body {
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.heading1{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkblue
+}
+h4{
+    text-align: right;
+    font-style: italic;
+}
+p{ text-align: justify;}

@@ -1,0 +1,61 @@
+/* font */
+@font-face {
+    fo font-family: 'Bebas'
+    src: url(../font/Bebas-reguler.ttf) format ('ttf');
+}
+
+/* Style Utama */
+body {
+    background-color: grey;
+    font:18px/36px 'Bebas';
+}
+h1 {
+    font-size: 70px;
+    margin: 50px 0px;
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+}
+.container {
+    width: 600px;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 3px 3px rgb(255,0,0);
+    border-radius: 5px;
+    animation: RGB 2.5s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+.galeri li {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #666;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.galeri li,
+.galeri li span,
+galeri li img {
+    border-radius: 50%;
+}
+.galeri li span{
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba (200,200,200,0.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0);rotate: (0);
+    transition: .4s;
+}
+.galeri li a:hover span{
+    opacity: 1;
+    transform: scale(1); rotate: (360deg);
+}
+.clear{
+    clear: both;
+}
