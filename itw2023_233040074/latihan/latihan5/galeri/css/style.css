@@ -6,32 +6,35 @@
 
 /* Style Utama */
 body {
-    background-color: #0e3c6a;
+    background-image: url(../img/pokemon.jpg);
     font:18px/36px 'Sans';
 }
 h1 {
-    font-size: 60px;
+    font-size: 80px;
     margin: 50px 0;
     text-align: center;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 .container {
-    width: 750px;
-    background-color: white;
+    width: 600px;
+    background-color: rgb(220, 227, 244);
     margin: auto;
-    padding: 30px;
-    box-shadow: 0 0 3px 3px rgb(81, 71, 71);
-    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 3px 3px rgb(29, 62, 226);
+    border-radius: 3px;
+    padding-left: 100px;
+    
 }
 .galery li {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    border: 5px solid #1e0876;
+    border: 3px solid #061757;
     overflow: hidden;
     float: left;
     margin-right: 30px;
     position: relative;
+    margin-top: 20px;
 }
 .galery li,
 .galery li img,
@@ -42,21 +45,23 @@ h1 {
     display: block;
     width: 140px;
     height: 140px;
-    background-color: rgba(33, 74, 135, 0.819);
+    background-color: rgba(40, 81, 142, 0.819);
     position: absolute;
     top: 0;
     text-align: center;
     line-height: 150px;
-    color: #333;
-    text-shadow: 1px 1px 1px #ddd;
+    color: #040404;
+    text-shadow: 1px 1px 1px #f8f8f8;
     opacity: 0;
-    transform: scale(0); rotate (0);
+    transform: scale(0) rotate(0deg);
     transition: .4s;
 }
+
 .galery li a:hover span{
     opacity: 1;
-    transform: scale(1); rotate (360deg);
+    transform: scale(1) rotate(360deg);
 }
+
 .clear{
     clear: both;
 }
@@ -83,8 +88,7 @@ h1 {
 }
 .overlay img{
     max-height: 100%;
-    box-shadow: 2px 2px 7px rgb(58, 58, 244);
-    border: 10px solid rgb(59, 160, 255);
+
 }
 .overlay:target img{
     animation: zoomDanFade 1s;
@@ -94,17 +98,17 @@ h1 {
     top: 50px;
     left: 50%;
     margin-left: -40px;
-    color: rgb(125, 177, 255);
+    color: rgb(44, 83, 142);
     text-decoration: none;
-    background-color: rgb(7, 48, 97);
-    border: 1px solid white;
     padding: 3px;
     line-height: 12px;
     opacity: 0; 
 }
+
 .overlay:target .close{
     animation: slideDownFade .5s .5s forwards;
 }
+
 .overlay:target.next,
 .overlay:target.prev {
     animation: fadeAjah .5 .5s forwards;
@@ -112,12 +116,13 @@ h1 {
 
 /*navigasi*/
 .next, .prev {
-    width: 512px;
-    height: 512px;
+    width: 100%;
+    height: 100%;
     background-image: url(../img/next.png);
+    background-repeat: no-repeat;
     position: absolute;
     text-indent: -9999px;
-    top: -0%;
+    top: 45%;
     margin-left: 20px;
     opacity: 0;
 }
@@ -127,8 +132,12 @@ h1 {
     margin-left: -100px;
 
 }
+.overlay:target .next,
+.overlay:target .prev{
+    opacity: 1;
+}
 /*animasi*/
-@keyframese zoomDanFade {
+@keyframes zoomDanFade {
     0% {
         opacity: 0;
     }
